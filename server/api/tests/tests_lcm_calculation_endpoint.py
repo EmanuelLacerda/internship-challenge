@@ -10,7 +10,7 @@ class OnlyPostMethodAllowedTestCase(APITestCase):
         url = reverse("lcm_interval_calculation")
 
         response = self.client.get(url)
-        self.assertEqual(response.status_code, 405)
+        self.assertEqual(response.status_code, status.HTTP_405_METHOD_NOT_ALLOWED)
     
     def test_if_post_method_is_allowed(self):
         url = reverse("lcm_interval_calculation")
@@ -21,7 +21,7 @@ class OnlyPostMethodAllowedTestCase(APITestCase):
         }
         response = self.client.post(url, json.dumps(data), content_type='application/json')
 
-        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
     
     def test_if_put_method_is_allowed(self):
         url = reverse("lcm_interval_calculation")
@@ -31,13 +31,13 @@ class OnlyPostMethodAllowedTestCase(APITestCase):
             "last_number": 10
         }
         response = self.client.put(url, data, content_type='application/json')
-        self.assertEqual(response.status_code, 405)
+        self.assertEqual(response.status_code, status.HTTP_405_METHOD_NOT_ALLOWED)
     
     def test_if_delete_method_is_allowed(self):
         url = reverse("lcm_interval_calculation")
 
         response = self.client.delete(url)
-        self.assertEqual(response.status_code, 405)
+        self.assertEqual(response.status_code, status.HTTP_405_METHOD_NOT_ALLOWED)
 
 class CalculationAccuracyTestCase(APITestCase):
     def test_calculation_result(self):
@@ -70,7 +70,7 @@ class InvalidDataTestCase(APITestCase):
         }
         response = self.client.post(url, json.dumps(data), content_type='application/json')
 
-        self.assertEqual(response.status_code, 400)
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
         self.assertTrue("last_number" in response.data)
         self.assertEqual(response.data["last_number"][0], "Este número deve ser um inteiro.")
     
@@ -83,7 +83,7 @@ class InvalidDataTestCase(APITestCase):
         }
         response = self.client.post(url, json.dumps(data), content_type='application/json')
 
-        self.assertEqual(response.status_code, 400)
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
         self.assertTrue("first_number" in response.data)
         self.assertEqual(response.data["first_number"][0], "O primeiro elemento do intervalo deve ser menor do que o último.")
     
@@ -96,7 +96,7 @@ class InvalidDataTestCase(APITestCase):
         }
         response = self.client.post(url, json.dumps(data), content_type='application/json')
 
-        self.assertEqual(response.status_code, 400)
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
         self.assertTrue("completed_interval" in response.data)
         self.assertEqual(response.data["completed_interval"][0], "O tamanho do intervalo deve ser maior que 0.")
 
