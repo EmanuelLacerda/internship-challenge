@@ -39,7 +39,7 @@ class LCMIntervalCalculationSerializer(serializers.Serializer):
 
         if first > last:
             raise serializers.ValidationError({"first_number": "O primeiro elemento do intervalo deve ser menor do que o último."})
-        elif last - first < 0:
+        elif last - first <= 0:
             raise serializers.ValidationError({"completed_interval": "O tamanho do intervalo deve ser maior que 0."})
         
         lcm =  calculate_LCM_of_interval(first, last)
