@@ -1,0 +1,43 @@
+.button-element{
+    background: linear-gradient(90deg, $color-primary-10, $color-primary-90);
+    border: none;
+    border-radius: $size-6;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+    width: 90%;
+}
+
+.button-element > .text-element{
+    color: $color-primary-100;
+}
+
+.button-element.md{
+    height: $size-14;
+}
+
+.button-element:hover{
+    background: linear-gradient(90deg, $color-primary-50, $color-primary-100);
+    cursor: pointer;
+}
+
+.button-element:hover > .text-element{
+    color: $color-neutral-0
+}
+
+.button-element:focus{
+    background-color: $color-primary-80;
+}
+
+.button-element:active{
+    background-color: $color-primary-100;
+}
+
+.button-element:disabled{
+    background: $color-neutral-30;
+    cursor: not-allowed;
+}
+
+.button-element:disabled > .text-element{
+    color: $color-neutral-10;
+}
