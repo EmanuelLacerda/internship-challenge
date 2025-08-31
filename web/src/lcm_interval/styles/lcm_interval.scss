@@ -1,0 +1,31 @@
+@import "../../styles/variables";
+
+.card-element{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 25px 12px;
+    width: 90%;
+
+    .form-element{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: $size-6;
+
+        width: 100%;
+
+        .form-body, .form-footer{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: $size-4;
+
+            width: 100%;
+        }
+    }
+}
