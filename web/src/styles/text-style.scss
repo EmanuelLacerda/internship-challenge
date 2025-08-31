@@ -56,6 +56,11 @@
     font-size: $text-us;
 }
 
+.label{
+    font-weight: $font-semibold;
+    font-size: $text-sm;
+}
+
 .errorTextFeedback, .successTextFeedback, .informativeTextFeedback{
     font-size: $text-sm;
 }
