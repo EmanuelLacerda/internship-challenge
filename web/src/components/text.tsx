@@ -20,6 +20,7 @@ export enum EnumTypeText {
     largeButton = 'largeButton',
     smallButton = 'smallButton',
     caption = 'caption',
+    label = 'label',
     
     errorFeedbackRegular = 'errorTextFeedback errorTextFeedbackRegular',
     errorFeedbackSemibold = 'errorTextFeedback errorTextFeedbackSemibold',
@@ -48,6 +49,7 @@ const tagMap: Record<EnumTypeText, ElementType> = {
     [EnumTypeText.smallButton]: 'span',
 
     [EnumTypeText.caption]: 'small',
+    [EnumTypeText.label]: 'span',
 
     [EnumTypeText.errorFeedbackRegular]: 'span',
     [EnumTypeText.errorFeedbackSemibold]: 'span',
