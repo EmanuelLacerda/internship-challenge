@@ -1,0 +1,83 @@
+.text-element{
+    font-family: $font-family;
+    color: $color-primary-text;
+}
+.text-element.disabled{
+    color: $color-neutral-30;
+}
+
+.heading{
+    font-weight: $font-semibold;
+    font-size: $text-2xl;
+}
+
+.body1regular{
+    font-weight: $font-normal;
+    font-size: $text-base;
+}
+
+.body1bold{
+    font-weight: $font-bold;
+    font-size: $text-base;
+}
+
+.body2Regular{
+    font-weight: $font-normal;
+    font-size: $text-sm;
+}
+
+.body2bold{
+    font-weight: $font-bold;
+    font-size: $text-sm;
+}
+
+.smallRegular{
+    font-weight: $font-normal;
+    font-size: $text-xs;
+}
+
+.smallBold{
+    font-weight: $font-bold;
+    font-size: $text-xs;
+}
+
+.largeButton{
+    font-weight: $font-semibold;
+    font-size: $text-base;
+}
+
+.smallButton{
+    font-weight: $font-semibold;
+    font-size: $text-xxs;
+}
+
+.caption{
+    font-weight: $font-normal;
+    font-size: $text-us;
+}
+
+.errorTextFeedback, .successTextFeedback, .informativeTextFeedback{
+    font-size: $text-sm;
+}
+
+.errorTextFeedback{
+    color: $color-feedback-error-100;
+}
+
+.successTextFeedback{
+    color: $color-feedback-success-100;
+}
+
+.informativeTextFeedback{
+    color: $color-feedback-informative-100;
+}
+
+.errorTextFeedbackRegular, .successTextFeedbackRegular, .informativeTextFeedbackRegular{
+    font-weight: $font-normal;
+}
+.errorTextFeedbackSemibold, .successTextFeedbackSemibold, .informativeTextFeedbackSemibold{
+    font-weight: $font-semibold;
+}
+.errorTextFeedbackBold, .successTextFeedbackBold, .informativeTextFeedbackBold{
+    font-weight: $font-bold;
+}
