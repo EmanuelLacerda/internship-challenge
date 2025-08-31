@@ -86,3 +86,100 @@
 .errorTextFeedbackBold, .successTextFeedbackBold, .informativeTextFeedbackBold{
     font-weight: $font-bold;
 }
+
+
+
+$increase-font-size-1: 1.5;
+$increase-font-size-2: 2;
+
+@media (min-width: 1920px) {
+    .heading{
+        font-size: $text-2xl*$increase-font-size-1;
+    }
+    
+    .body1regular{
+        font-size: $text-base*$increase-font-size-1;
+    }
+    
+    .body1bold{
+        font-size: $text-base*$increase-font-size-1;
+    }
+    
+    .body2Regular{
+        font-size: $text-sm*$increase-font-size-1;
+    }
+    
+    .body2bold{
+        font-size: $text-sm*$increase-font-size-1;
+    }
+    
+    .smallRegular{
+        font-size: $text-xs*$increase-font-size-1;
+    }
+    
+    .smallBold{
+        font-size: $text-xs*$increase-font-size-1;
+    }
+    
+    .largeButton{
+        font-size: $text-base*$increase-font-size-1;
+    }
+    
+    .smallButton{
+        font-size: $text-xxs*$increase-font-size-1;
+    }
+    
+    .caption{
+        font-size: $text-us*$increase-font-size-1;
+    }
+    
+    .label{
+        font-size: $text-sm*$increase-font-size-1;
+    }
+}
+
+@media (min-width: 1920px) {
+    .heading{
+        font-size: $text-2xl*$increase-font-size-2;
+    }
+    
+    .body1regular{
+        font-size: $text-base*$increase-font-size-2;
+    }
+    
+    .body1bold{
+        font-size: $text-base*$increase-font-size-2;
+    }
+    
+    .body2Regular{
+        font-size: $text-sm*$increase-font-size-2;
+    }
+    
+    .body2bold{
+        font-size: $text-sm*$increase-font-size-2;
+    }
+    
+    .smallRegular{
+        font-size: $text-xs*$increase-font-size-2;
+    }
+    
+    .smallBold{
+        font-size: $text-xs*$increase-font-size-2;
+    }
+    
+    .largeButton{
+        font-size: $text-base*$increase-font-size-2;
+    }
+    
+    .smallButton{
+        font-size: $text-xxs*$increase-font-size-2;
+    }
+    
+    .caption{
+        font-size: $text-us*$increase-font-size-2;
+    }
+    
+    .label{
+        font-size: $text-sm*$increase-font-size-2;
+    }
+}

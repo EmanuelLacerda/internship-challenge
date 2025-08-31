@@ -11,11 +11,25 @@
 
 body{
     background-color: $color-primary-10;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
 
-    .container{
-        display: flex;
-        justify-content: center;
+    #root{
+        width: 90%;
+        max-width: 700px;
+
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+    
+            width: 100%;
+        }
+    }
+
+    @media (min-width: 1920px) {
         align-items: center;
-        flex-direction: column;
     }
 }
