@@ -136,6 +136,10 @@ $increase-font-size-2: 2;
     .label{
         font-size: $text-sm*$increase-font-size-1;
     }
+
+    .errorTextFeedback, .successTextFeedback, .informativeTextFeedback{
+        font-size: $text-sm*$increase-font-size-1;
+    }
 }
 
 @media (min-width: 1920px) {
@@ -180,6 +184,10 @@ $increase-font-size-2: 2;
     }
     
     .label{
+        font-size: $text-sm*$increase-font-size-2;
+    }
+
+    .errorTextFeedback, .successTextFeedback, .informativeTextFeedback{
         font-size: $text-sm*$increase-font-size-2;
     }
 }
