@@ -9,6 +9,10 @@
     padding: 25px 12px;
     width: 100%;
 
+    @media (min-width: 1920px) {
+        padding: 45px 35px;;
+    }
+
     .form-element{
         display: flex;
         flex-direction: column;

@@ -15,6 +15,10 @@ body{
     justify-content: center;
     min-height: 100vh;
 
+    @media (min-width: 1920px) {
+        align-items: center;
+    }
+
     #root{
         width: 90%;
         max-width: 700px;
@@ -29,7 +33,5 @@ body{
         }
     }
 
-    @media (min-width: 1920px) {
-        align-items: center;
-    }
+    
 }
