@@ -31,5 +31,10 @@
 
             width: 100%;
         }
+
+        .result_container{
+            display: flex;
+            gap: $size-1;
+        }
     }
 }
