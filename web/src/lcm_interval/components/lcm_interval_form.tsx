@@ -79,13 +79,13 @@ export default function LCMIntervalForm(){
         <div className="form-footer">
             <Button disabled={isSubmitting} onClick={() => setLCMResult(null)}>CALCULAR</Button>
         </div>
-        <ul className="error-message-container" style={{"listStyleType": "none"}}>
+        {requestErrors && <ul className="error-message-container" style={{"listStyleType": "none"}}>
             {requestErrors?.map((
                 error, index) => <li key={`${index}-${error}`}>
                     <Text type={EnumTypeText.errorFeedbackRegular}>{error}</Text>
                 </li>
             )}
-        </ul>
+        </ul>}
         {lcmResult && <div className="result_container">
             <Text type={EnumTypeText.body1bold} as="span">O MMC dos números entre {lcmResult.first_number} e {lcmResult.last_number}:</Text>
             <Text type={EnumTypeText.body1regular} as="span">{lcmResult.lcm}</Text>
