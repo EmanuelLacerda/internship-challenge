@@ -16,3 +16,21 @@
   <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=green"></img>
   <img src="https://img.shields.io/badge/DJANGO-REST-ff1709?style=for-the-badge&logo=django&logoColor=white&color=ff1709&labelColor=gray"></img>
 </p>
+<h2 id="tech">📦 Tecnologias usadas:</h2>
+<h3>Frontend:</h3>
+
+- **Base:** HTML5, CSS3, JavaScript (ES6+)
+- **Reatividade:** [React](https://react.dev/)
+- **Gerenciamento de formulários:** [React Hook Form](https://react-hook-form.com/) e [Zod](https://zod.dev/)
+- **CSS:** Sass
+- **Requisição HTTP:** Axios
+
+<h3>Backend:</h3>
+
+- **Lógica do servidor:** [Django](https://www.djangoproject.com/)
+- **API:** [Django REST Framework(API)](https://www.django-rest-framework.org/)
+
+<h3>Controle de Versão:</h3>
+
+- Git com Conventional Commits e seguindo Git-Flow
+
