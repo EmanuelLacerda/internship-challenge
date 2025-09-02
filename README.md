@@ -34,3 +34,114 @@
 
 - Git com Conventional Commits e seguindo Git-Flow
 
+
+
+
+<h2 id="instalation-guide">🔥 Guia de instalação:</h2>
+
+<h3>⚙️ Pré-requisitos:</h3>
+
+Você precisa ter instalado na sua máquina as seguintes tecnologias:
+
+- Node
+- Python
+
+*Obs.: Desenvolvi este projeto com Node 20.x e Python 3.12.x. Não testei o projeto em versões anteriores destas tecnologias.
+
+<h3>🔨 Guia de instalação:</h1>
+
+
+<h4>Passo 1: Clone esse repositório</h4>
+
+```bash
+git clone git@github.com:EmanuelLacerda/internship-challenge.git
+```
+
+<h4>Passo 2: Acesse a pasta do respositório</h4>
+
+```bash
+cd internship-challenge
+```
+
+<h4>Passo 3: Instale as dependências</h4>
+
+Neste repositório, há 2 diretórios, sendo um deles a api(server/) e o outro o frontend(web/). Cada repositório possuí dependências próprias. Então, você precisa instalar as dependências individualmente. Abaixo segue como fazer para cada um dos dois.
+
+**1° Acesse o diretório "server":**
+
+```bash
+cd server
+```
+
+**2° Execute o "pip3 install -r requirements.txt":**
+
+```bash
+pip3 install -r requirements.txt
+```
+
+**3° Volte para a raiz do projeto:**
+
+```bash
+cd ..
+```
+
+**4° Acesse o diretório "web":**
+
+```bash
+cd web
+```
+
+**5° Execute o comando "npm install":**
+
+```bash
+npm install
+```
+
+**6° Volte para a raiz do projeto:**
+
+```bash
+cd ..
+```
+
+<h4>Passo 04: Adicione as variáveis de ambiente no diretório server</h4>
+
+Ao acessar server/.env.examples você verá o seguinte conteúdo:
+
+```
+SECRET_KEY=
+DEBUG=
+```
+
+Explicação sobre as varíaveis:
+
+- **SECRET_KEY:** Coloque nesta a SECRET_KEY que você tiver gerado para a aplicação Django.
+- **DEBUG:** Coloque nesta um boolean indicando se o projeto está ou não no debug mode.
+
+<h4>Passo 05: Execute o projeto</h4>
+
+**1° Acesse o diretório server:**
+
+```bash
+cd server
+```
+
+**2° Execute a api:**
+
+```bash
+python3 manage.py runserver
+```
+
+**3° Acesse o diretório web:**
+
+```bash
+cd web
+```
+
+**4° Execute o frontend:**
+
+```bash
+npm run dev
+```
+
+*Obs.: Para o projeto funcionar corretamente, api e frontend devem estar em execução ao mesmo tempo.
+
