@@ -2,6 +2,7 @@
 <p align="center">
  <a href="#tech">Tecnologias usadas</a> • 
  <a href="#instalation-guide">Guia de instalação</a> • 
+ <a href="#test-execution">Execução dos Testes</a> •
  <a href="#api-endpoints">API Endpoints</a> •
  <a href="#licenca">Licença</a> • 
 </p>
@@ -141,6 +142,13 @@ cd web
 
 ```bash
 npm run dev
+```
+
+<h2 id="test-execution">Executando os testes:</h2>
+
+Há testes automatizados para a API deste projeto. Para rodar esses testes, basta executar o comando abaixo no diretório server/:
+```bash
+python3 manage.py test --pattern="tests_*.py"
 ```
 
 *Obs.: Para o projeto funcionar corretamente, api e frontend devem estar em execução ao mesmo tempo.
