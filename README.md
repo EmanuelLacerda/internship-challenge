@@ -3,8 +3,7 @@
  <a href="#tech">Tecnologias usadas</a> • 
  <a href="#instalation-guide">Guia de instalação</a> • 
  <a href="#test-execution">Execução dos Testes</a> •
- <a href="#api-endpoints">API Endpoints</a> •
- <a href="#licenca">Licença</a> • 
+ <a href="#api-endpoints">API Endpoints</a>
 </p>
 <p align="center">
   <img src="https://img.shields.io/badge/Sass-CC6699?style=flat-square&logo=Sass&logoColor=white"></img>
