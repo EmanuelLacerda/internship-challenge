@@ -144,6 +144,8 @@ cd web
 npm run dev
 ```
 
+*Obs.: Para o projeto funcionar corretamente, api e frontend devem estar em execução ao mesmo tempo.
+
 <h2 id="test-execution">Executando os testes:</h2>
 
 Há testes automatizados para a API deste projeto. Para rodar esses testes, basta executar o comando abaixo no diretório server/:
@@ -151,5 +153,35 @@ Há testes automatizados para a API deste projeto. Para rodar esses testes, bast
 python3 manage.py test --pattern="tests_*.py"
 ```
 
-*Obs.: Para o projeto funcionar corretamente, api e frontend devem estar em execução ao mesmo tempo.
+<h2 id="api-endpoints">⚙️ API Endpoints</h2>
+A API provém o seguinte endpoint:
+
+| rota                            | descrição                                           |
+| ------------------------------- | --------------------------------------------------- |
+| <kbd>POST /lcm-interval-calculation</kbd> | Calcula o MMC dos números de um intervalo de inteiros positivos [Ver detalhes](#lcm-interval-calculation) |
+
+
+<h3 id="lcm-interval-calculation">POST /lcm-interval-calculation</h3>
+
+<h4>REQUEST:</h4>
+
+```json
+{
+  "first_number": 1,
+  "last_number": 10
+}
+```
+
+<h4>RESPONSE:</h4>
+
+```json
+{
+  "first_number": 1,
+  "last_number": 10,
+  "lcm": 2520
+}
+```
+
+
+
 
