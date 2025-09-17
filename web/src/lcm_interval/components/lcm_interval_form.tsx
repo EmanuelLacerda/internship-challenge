@@ -25,8 +25,8 @@ export default function LCMIntervalForm(){
     const {calculateLCMInterval} = useLCMInterval("lcm-interval-calculation/")
 
     const fieldMap = {
-        "first_number": "Primeiro Campo",
-        "last_number": "Último Campo"
+        "first_number": "Primeiro elemento",
+        "last_number": "Último elemento"
     }
 
     const onSubmit = async (data: IFormSchema) => {
@@ -43,7 +43,7 @@ export default function LCMIntervalForm(){
                 const requestErrorsArray = []
 
                 for(const error_name of Object.keys((response as AxiosResponse).data)){
-                    requestErrorsArray.push(error_name ? `${fieldMap[error_name as keyof typeof fieldMap]} ${(response as AxiosResponse).data[error_name][0].toLowerCase()}` : (response as AxiosResponse).data[error_name][0])
+                    requestErrorsArray.push(fieldMap[error_name as keyof typeof fieldMap] ? `${fieldMap[error_name as keyof typeof fieldMap]}:   ${(response as AxiosResponse).data[error_name][0].toLowerCase()}` : (response as AxiosResponse).data[error_name][0])
                 }
 
                 setRequestErrors(requestErrorsArray)
